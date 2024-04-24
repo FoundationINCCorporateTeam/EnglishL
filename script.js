@@ -40,7 +40,57 @@ function convertToHTML(input) {
     html = html.replace(/\[data\](.*?)\[\.data\]/g, '<td>$1</td>');
 
     // Divisions
-    html = html.replace(/\[dv\](.*?)\[\.div\]/g, '<dv>$1</div>');
+    html = html.replace(/\[dv\](.*?)\[\.dv\]/g, '<dv>$1</div>');
 
+    .replace(/\[filetype\](.*?)\[\.filetype\]/g, '<!DOCTYPE $1>');
+
+    // Comments
+    html = html.replace(/\[<\](.*?)\[\.>\]/g, '<!-- $1 -->');
+
+    // HTML Head
+    html = html.replace(/\[hd\](.*?)\[\.hd\]/g, '<head>$1</head>');
+
+    // HTML Body
+    html = html.replace(/\[by\](.*?)\[\.by\]/g, '<body>$1</body>');
+
+    // Header
+    html = html.replace(/\[header\](.*?)\[\.header\]/g, '<header>$1</header>');
+
+    // Footer
+    html = html.replace(/\[footer\](.*?)\[\.footer\]/g, '<footer>$1</footer>');
+
+    // Main
+    html = html.replace(/\[main\](.*?)\[\.main\]/g, '<main>$1</main>');
+
+    // Summary
+    html = html.replace(/\[sum\](.*?)\[\.sum\]/g, '<summary>$1</summary>');
+
+    // Details
+    html = html.replace(/\[detail\](.*?)\[\.detail\]/g, '<details>$1</details>');
+
+    // Article
+    html = html.replace(/\[art\](.*?)\[\.art\]/g, '<article>$1</article>');
+
+    // Abbreviation
+    html = html.replace(/\[abr\](.*?)\[\.abr\]/g, '<abbr>$1</abbr>');
+
+    // Address
+    html = html.replace(/\[add\](.*?)\[\.add\]/g, '<address>$1</address>');
+
+    // Span
+    html = html.replace(/\[span\](.*?)\[\.span\]/g, '<span>$1</span>');
+
+    // Script
+    html = html.replace(/\[scr\](.*?)\[\.scr\]/g, '<script>$1</script>');
+
+    // Noscript
+    html = html.replace(/\[noscr\](.*?)\[\.noscr\]/g, '<noscript>$1</noscript>');
+
+    // Navigation
+    html = html.replace(/\[nav\](.*?)\[\.nav\]/g, '<nav>$1</nav>');
+
+    // Button
+    html = html.replace(/\[button\](.*?)\[\.button\]/g, '<button>$1</button>');
+    
     return html;
 }
