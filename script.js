@@ -81,7 +81,8 @@ function convertToHTML(input) {
     html = html.replace(/\[span\](.*?)\[\.span\]/g, '<span>$1</span>');
 
     // Script
-    html = html.replace(/\[scr\](.*?)\[\.scr\]/g, '<script>$1</script>');
+    html = html.replace(/\[scr\s+location="([^"]+)"\s*\](.*?)\[\.scr\]/g, '<script src="$1">$2</script>');
+
 
     // Noscript
     html = html.replace(/\[noscr\](.*?)\[\.noscr\]/g, '<noscript>$1</noscript>');
