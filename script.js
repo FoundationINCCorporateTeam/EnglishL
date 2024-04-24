@@ -42,7 +42,7 @@ function convertToHTML(input) {
     // Divisions
     html = html.replace(/\[dv\](.*?)\[\.dv\]/g, '<dv>$1</div>');
 
-    .replace(/\[filetype\](.*?)\[\.filetype\]/g, '<!DOCTYPE $1>');
+    html = html.replace(/\[filetype\](.*?)\[\.filetype\]/g, '<!DOCTYPE $1>');
 
     // Comments
     html = html.replace(/\[<\](.*?)\[\.>\]/g, '<!-- $1 -->');
