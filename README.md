@@ -6,3 +6,4 @@ Much more to come.\
 [EnglishL Tutorials and Element Refrence](https://github.com/FoundationINCCorporateTeam/EnglishL/blob/main/tutorials.md)
 
 ## MN Code: EnglishL All Rights Reserved
+This software is protected under the ProtectiveCoding License (Version 2.0). All rights reserved. For more information, please visit: [https://github.com/FoundationINCCorporateTeam/EnglishL](https://github.com/FoundationINCCorporateTeam/EnglishL)
